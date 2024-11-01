@@ -1,0 +1,105 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(18, 26, 74);
+}
+
+.glass {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(100px);
+  /* background: rgba(255, 255, 255, 0.3); */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* */
+}
+
+h1 {
+  color: wheat;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  max-width: 300px;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+#container input {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 78%;
+  margin-bottom: 20px;
+}
+
+#container input:focus {
+  outline: none;
+}
+
+#add-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 2px solid rgb(140, 165, 38);
+  margin-bottom: 20px;
+}
+
+#add-container img {
+  cursor: pointer;
+  opacity: 0.8;
+  margin-right: -4px;
+}
+
+#add-container img:hover {
+  opacity: 0.5;
+}
+
+ul {
+  padding: 0px;
+}
+
+ol {
+  text-decoration: none;
+  padding: 0px;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0px 8px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.task:hover {
+  opacity: 0.8;
+}
+
+#completed-tasks ol {
+  background-color: rgb(209, 89, 89);
+}
+#completed-tasks .task p:first-of-type {
+  text-decoration: line-through;
+  text-decoration-color: rgb(87, 84, 182);
+}
+
+#todo-tasks ol {
+  background-color: rgb(19, 141, 141);
+}
+
+p:last-child:hover {
+  cursor: pointer;
+}
