@@ -12,9 +12,24 @@ html {
   padding: 20px;
   border-radius: 15px;
   backdrop-filter: blur(100px);
-  /* background: rgba(255, 255, 255, 0.3); */
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* */
+}
+
+#tasks .glass {
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto 20px;
+  overflow-y: scroll;
+  opacity: 0.8;
+  max-height: 150px;
+  border-radius: 0px;
+}
+
+#tasks .glass::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+  background-color: black;
+  
 }
 
 h1 {
@@ -102,4 +117,16 @@ ol {
 
 p:last-child:hover {
   cursor: pointer;
+}
+
+.task img {
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+}
+
+.task img:hover {
+  border: 1px solid wheat;
+  border-radius: 50%;
+  opacity: 0.6;
 }
